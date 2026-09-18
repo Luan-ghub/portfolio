@@ -4,9 +4,9 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="pt-BR">
 	<head>
-		<title>Editorial by HTML5 UP</title>
+		<title>Portfólio de Projetos | Luan</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -53,6 +53,34 @@
 		object-fit: cover;
 	}
 
+	/* Mantém as capas dos projetos com proporções consistentes. */
+	.posts .project-image {
+		display: block;
+		width: 100%;
+		height: 260px;
+		overflow: hidden;
+	}
+
+	.posts .project-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	.mini-posts .recent-project-image {
+		display: block;
+		height: 150px;
+		overflow: hidden;
+	}
+
+	.mini-posts .recent-project-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+
 	/* Responsividade */
 	@media screen and (max-width: 736px) {
 		section#banner .image.object.perfil {
@@ -65,13 +93,16 @@
 		section#banner {
 			padding: 3em 0; /* Ajusta o padding da seção para telas menores */
 		}
+		.posts .project-image {
+			height: 220px;
+		}
 	}
 
 </style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
+		<!-- Estrutura principal -->
 			<div id="wrapper">
 
 				<!-- Main -->
@@ -103,17 +134,17 @@
     </div>
 </section>
 
-							<!-- Sobre mim -->
+							<!-- Sobre -->
 								<section id = "sobre-mim">
 									<header class="main">
-										<h1>Sobre mim</h1>
+										<h1>Sobre</h1>
 									</header>
 
 									<!-- Content -->
-										<p>Sou Engenheiro Eletricista com formação técnica em Eletrotécnica e experiência em planejamento, controle da produção e análise de processos industriais. Durante minha trajetória profissional, atuei em empresas como a Engepack Embalagens e a Coelba, onde desenvolvi relatórios, dashboards e indicadores, além de modelar algoritmos para otimização de processos, acompanhamento de estoque, programação de produção e análise de eficiência. <p>
+										<p>Meu nome é Luan, tenho 27 anos, sou Cientista de Dados e Engenheiro Eletricista formado pelo IFBA. Minha trajetória profissional reúne cerca de 5 anos de experiência combinando análise de dados, engenharia, processos de negócio e automações para apoiar na decisão gerencial, na identificação de oportunidades e na melhora de resultados.</p>
 
-										<p>Atualmente, estou em transição para a área de Análise e Ciência de Dados com foco em aplicar ferramentas como SQL, Python, R, Excel, Power BI e Machine Learning para resolver problemas reais e apoiar a tomada de decisão </p>
-
+										<p>Neste portfólio você irá encontrar projetos práticos voltados para o aperfeiçoamento e aprofundamento em Ciência de Dados, utilizando ferramentas para resolver problemas de negócio e transformar dados em informações acionáveis.</p>
+								</section>
 
 							<!-- Section -->
 								<section>
@@ -122,15 +153,20 @@
 									</header>
 										<div class="features">
 											<article>
-												<span class="icon solid fa-database"></span>
+												<span class="icon solid fa-chart-line"></span>
 												<div class="content">
-													<h3>Linguagens e Bancos de Dados</h3>
+													<h3>Análise e Metodologias</h3>
 													<ul>
-														<li>Python .</li>
-														<li>Web scraping com python.</li>
-														<li>SQL para extração de dados.</li>
-														<li>R para modelagem estatística.</li>
-														<li>Banco de dados (SQLite, Postgres, MySQL, Oracle, Mongodb, Cassandra)</li>
+														<li>Python, Excel, Scrum e Kanban.</li>
+													</ul>
+												</div>
+											</article>
+											<article>
+												<span class="icon solid fa-chart-bar"></span>
+												<div class="content">
+													<h3>Visualização de Dados</h3>
+													<ul>
+														<li>Power BI, Streamlit, Looker e Tableau.</li>
 													</ul>
 												</div>
 											</article>
@@ -139,32 +175,16 @@
 												<div class="content">
 													<h3>Estatística e Machine Learning</h3>
 													<ul>
-														<li>Estatística descritiva.</li>
-														<li>Algorítimos de regressão, classificação, clusterizazção e learn to rank.</li>
-														<li>Balanceamento, seleção de atributos e redução de dimensionalidade.</li>
-														<li>Métricas de perfomance.</li>
-														<li>Pacotes de Machine Learning: Sklearn e Scipy.</li>
+														<li>Estatística descritiva e inferencial, testes de hipótese, teste A/B, regressão, classificação, clusterização e séries temporais.</li>
 													</ul>
 												</div>
 											</article>
 											<article>
-												<span class="icon solid fa-chart-bar"></span>
+												<span class="icon solid fa-database"></span>
 												<div class="content">
-													<h3>Visualização de dados</h3>
+													<h3>Bancos e Engenharia</h3>
 													<ul>
-														<li>Power BI, Tableu, Metabase e Looker.</li>
-														<li>Matplotlib, Seaborn, Plotly e Bokeh.</li>
-													</ul>
-												</div>
-											</article>
-											<article>
-												<span class="icon solid fa-code"></span>
-												<div class="content">
-													<h3>Engenharia de software</h3>
-													<ul>
-														<li>Git, Github, Gitlab, Cookiecutter, Docker e Virtual Environment.</li>
-														<li>Streamlit, Flask, Python API's.</li>
-														<li>Cloud Heroku, AWS Amazon, Google Cloud Plataform e Azure.</li>
+														<li>SQL, NoSQL, Git, GitHub, AWS, Azure e GCP.</li>
 													</ul>
 												</div>
 											</article>
@@ -174,50 +194,66 @@
 							<!-- Section 1 -->
 								<section id="projetos">
 									<header class="major">
-										<h1>Projetos de Análise de Dados</h1>
+										<h1>Projetos</h1>
 									</header>
 									<div class="posts">
 										<article>
-										    <a href="https://github.com/Luan-ghub/curry_company" class="image" target="_blank">
-										        <img src="images/food.png" alt="Painel Interativo de Delivery" />
-										    </a>
-										    
-										    <h3>Desenvolvimento de Painel Gerencial Interativo com Streamlit</h3>
-										    <p>O projeto consistiu no desenvolvimento de um painel gerencial interativo focado na análise de dados logísticos e de desempenho para uma empresa de food delivery. Foram utilizados os processos ETL utilizando Python, bem ferramentas de Desenvolvimento web, Streamlit e GitHub para montagem do dashboard. </p>
-										    
-										    <p>A finalidade da aplicação é mapear detalhadamente a operação de entregas, possibilitando o acompanhamento tático e estratégico e resultando em um produto de dados fluido e responsivo que converte milhares de registros brutos em insights visuais diretos, facilitando a tomada de decisão por parte da gestão</p>
-										    
-										    <h4>Ferramentas Utilizadas</h4>
-										    <ul>
-										        <li>Python;</li>
-										        <li>Jupyter Lab;</li>
-										        <li>Terminal;</li>
-										        <li>Streamlit;</li>
-										        <li>Github.</li>
-										    </ul>
-										    
-										    <ul class="actions">
-										        <li><a href="https://github.com/Luan-ghub/curry_company" class="button primary" target="_blank">Saiba Mais</a></li>
-										        <li><a href="https://currycompany-project.streamlit.app/" class="button" target="_blank">Dashboard</a></li>
-										    </ul>
+											<a href="https://github.com/Luan-ghub/enem-2025-data-quality-pipeline" class="image project-image" target="_blank" rel="noopener noreferrer">
+												<img src="images/enem.png" alt="Projeto de pipeline dos Microdados do ENEM 2025" />
+											</a>
+											<h3>Pipeline de Qualidade dos Microdados do ENEM 2025</h3>
+											<p>Projeto de portfólio voltado à auditoria, limpeza, padronização e validação dos Microdados do ENEM 2025, respeitando as limitações documentais e o volume dos arquivos disponibilizados pelo Inep.</p>
+											<p>A solução está sendo desenvolvida de forma reproduzível, com versionamento, ambiente isolado e etapas de qualidade documentadas para transformar os arquivos brutos em produtos de dados adequados para análise.</p>
+											<h4>Ferramentas Utilizadas</h4>
+											<ul>
+												<li>Python, Pandas e PyArrow;</li>
+												<li>Jupyter Notebook;</li>
+												<li>Git e GitHub;</li>
+												<li>Testes de qualidade com Pytest.</li>
+											</ul>
+											<ul class="actions">
+												<li><a href="https://github.com/Luan-ghub/enem-2025-data-quality-pipeline" class="button primary" target="_blank" rel="noopener noreferrer">Saiba mais</a></li>
+												<li><a href="https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem" class="button" target="_blank" rel="noopener noreferrer">Base Inep</a></li>
+											</ul>
 										</article>
 
 										<article>
-											<a href="https://github.com/Luan-ghub/Zomato" class="image"><img src="images/logo.png" alt="" /></a>
-											<h3>Dashboard Interativo Zomato</h3>
-											<p>O projeto Zomato compreende um dashboard analítico focado na exploração de dados globais de um marketplace de restaurantes. O painel foi montado utilizando Python, Streamlit e GitHub.</p>
-											<p>O propósito da ferramenta é mapear o mercado gastronômico mundial, analisando correlações entre custos, avaliações de clientes e grandes polos culinários. O resultado final é uma plataforma responsiva que traduz volumes massivos de dados em direcionamentos estratégicos claros.</p>
+											<a href="https://github.com/Luan-ghub/curry_company" class="image project-image" target="_blank" rel="noopener noreferrer">
+												<img src="images/food.png" alt="Dashboard Interativo Curry Company" />
+											</a>
+											<h3>Dashboard Interativo Curry Company</h3>
+											<p>Dashboard gerencial interativo para análise de dados logísticos e de desempenho de uma empresa de food delivery, desenvolvido a partir de um processo de ETL com Python.</p>
+											<p>A aplicação permite acompanhar indicadores táticos e estratégicos nas visões da empresa, dos entregadores e dos restaurantes, transformando dados operacionais em informações para a tomada de decisão.</p>
 											<h4>Ferramentas Utilizadas</h4>
-															<ul>
-																<li>Python;</li>
-																<li>Jupyter Lab;.</li>
-																<li>Mapas interativos com Plotly e Folium;</li>
-																<li>Streamlit Cloud.</li>
-																<li>Streamlit</li>
-															</ul>
+											<ul>
+												<li>Python e Pandas;</li>
+												<li>Plotly e Folium;</li>
+												<li>Streamlit e Streamlit Cloud;</li>
+												<li>Git e GitHub.</li>
+											</ul>
 											<ul class="actions">
-												<li><a href="https://github.com/Luan-ghub/Zomato" class="button">Saiba Mais</a></li>
-												<li><a href="https://zomatodash.streamlit.app/" class="button" target="_blank">Dashboard</a></li>
+												<li><a href="https://github.com/Luan-ghub/curry_company" class="button primary" target="_blank" rel="noopener noreferrer">Saiba mais</a></li>
+												<li><a href="https://currycompany-project.streamlit.app/" class="button" target="_blank" rel="noopener noreferrer">Dashboard</a></li>
+											</ul>
+										</article>
+
+										<article>
+											<a href="https://github.com/Luan-ghub/Zomato" class="image project-image" target="_blank" rel="noopener noreferrer">
+												<img src="images/logo.png" alt="Dashboard Interativo Zomato" />
+											</a>
+											<h3>Dashboard Interativo Zomato</h3>
+											<p>Dashboard analítico focado na exploração de dados globais de um marketplace de restaurantes, com indicadores organizados nas visões de países, cidades e restaurantes.</p>
+											<p>A aplicação permite investigar alcance de mercado, diversidade culinária, avaliações, preços e serviços, convertendo dados brutos em uma ferramenta de navegação estratégica.</p>
+											<h4>Ferramentas Utilizadas</h4>
+											<ul>
+												<li>Python e Pandas;</li>
+												<li>Plotly e Folium;</li>
+												<li>Streamlit e Streamlit Cloud;</li>
+												<li>Git e GitHub.</li>
+											</ul>
+											<ul class="actions">
+												<li><a href="https://github.com/Luan-ghub/Zomato" class="button primary" target="_blank" rel="noopener noreferrer">Saiba mais</a></li>
+												<li><a href="https://zomatodash.streamlit.app/" class="button" target="_blank" rel="noopener noreferrer">Dashboard</a></li>
 											</ul>
 										</article>
 									</div>
@@ -236,8 +272,8 @@
 										</header>
 										<ul>
 											<li><a href="index.html">Homepage</a></li>
-											<li><a href="#sobre-mim">Sobre mim</a></li>
-											<li><a href="#projetos">Projetos de Análise de Dados</a></li>
+											<li><a href="#sobre-mim">Sobre</a></li>
+											<li><a href="#projetos">Projetos</a></li>
 											<li><a href="#contato">Contato</a></li>
 										</ul>
 									</nav>
@@ -249,18 +285,18 @@
     </header>
 		<div class="mini-posts">
 			<article>
-				<a href="https://github.com/Luan-ghub/curry_company" class="image"><img src="images/food.png" alt="Painel Interativo Marketplace" /></a>
-				<h3>Painel Interativo de Delivery</h3>
-				<p>Desenvolvimento de um painel gerencial interativo focado na análise de dados logísticos e de desempenho para uma empresa de food delivery.</p>
+				<a href="https://github.com/Luan-ghub/enem-2025-data-quality-pipeline" class="image recent-project-image" target="_blank" rel="noopener noreferrer"><img src="images/enem.png" alt="Pipeline de Qualidade dos Microdados do ENEM 2025" /></a>
+				<h3>Pipeline de Qualidade dos Microdados do ENEM 2025</h3>
+				<p>Auditoria, limpeza, padronização e validação dos microdados públicos disponibilizados pelo Inep.</p>
 			</article>
 			<article>
-				<a href="#" class="image"><img src="images/logo.png" alt="Dashboard Zomato" /></a>
-				<h3>Dashboard Interativo Zomato</h3>
-				<p>Dashboard analítico focado na exploração de dados globais de um marketplace de restaurantes.</p>
+				<a href="https://github.com/Luan-ghub/curry_company" class="image recent-project-image" target="_blank" rel="noopener noreferrer"><img src="images/food.png" alt="Dashboard Interativo Curry Company" /></a>
+				<h3>Dashboard Interativo Curry Company</h3>
+				<p>Painel gerencial para análise de indicadores logísticos e de desempenho de uma empresa de food delivery.</p>
 			</article>
 		</div>
     <ul class="actions">
-        <li><a href="#" class="button">Ver todos os projetos</a></li>
+        <li><a href="#projetos" class="button">Ver todos os projetos</a></li>
     </ul>
 </section>
 							<!-- Section -->
