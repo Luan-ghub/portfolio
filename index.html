@@ -81,6 +81,14 @@
 		object-position: center;
 	}
 
+	.posts .project-image.contain-cover img,
+	.mini-posts .recent-project-image.contain-cover img {
+		object-fit: contain;
+		box-sizing: border-box;
+		padding: 1.25em;
+		background: #f7f7f7;
+	}
+
 	/* Responsividade */
 	@media screen and (max-width: 736px) {
 		section#banner .image.object.perfil {
@@ -202,6 +210,105 @@
 									</header>
 									<div class="posts">
 										<article>
+											<a href="https://github.com/Luan-ghub/hm-customer-product-analytics" class="image project-image contain-cover" target="_blank" rel="noopener noreferrer">
+												<img src="images/hm-analytics.png" alt="H&amp;M Analytics - Dashboard" />
+											</a>
+											<h3>H&amp;M Analytics - Dashboard</h3>
+											<p>Projeto de Customer e Product Analytics desenvolvido para entender a recorrência dos clientes e sua relação com características cadastrais, grupos de produtos e canais comerciais.</p>
+											<p>O trabalho percorre inspeção, limpeza, engenharia de atributos e análise exploratória de mais de 31 milhões de registros, culminando em um dashboard no Power BI com visões gerencial, de clientes, produtos e canais.</p>
+											<h4>Ferramentas Utilizadas</h4>
+											<ul>
+												<li>Python, Pandas e Jupyter Notebook;</li>
+												<li>Power BI, Power Query e DAX;</li>
+												<li>Parquet e PyArrow;</li>
+												<li>Git e GitHub.</li>
+											</ul>
+											<ul class="actions">
+												<li><a href="https://github.com/Luan-ghub/hm-customer-product-analytics" class="button primary" target="_blank" rel="noopener noreferrer">Saiba mais</a></li>
+												<li><a href="https://github.com/Luan-ghub/hm-customer-product-analytics#dashboard" class="button" target="_blank" rel="noopener noreferrer">Dashboard</a></li>
+											</ul>
+										</article>
+
+										<article>
+											<a href="https://github.com/Luan-ghub/rebalanceamento-bike-itau-n8n" class="image project-image" target="_blank" rel="noopener noreferrer">
+												<img src="images/bikes-itau.png" alt="Automação de Balanceamento Bikes Itaú" />
+											</a>
+											<h3>Automação de Balanceamento Bikes Itaú</h3>
+											<p>MVP low-code desenvolvido no n8n para apoiar a priorização do rebalanceamento das estações do Bike Itaú em Salvador a partir de dados públicos no padrão GBFS.</p>
+											<p>A automação consulta a disponibilidade atual, classifica estações críticas e sugere origem, destino, quantidade, distância e prioridade das movimentações, evitando recomendações duplicadas no mesmo dia.</p>
+											<h4>Ferramentas Utilizadas</h4>
+											<ul>
+												<li>n8n;</li>
+												<li>APIs REST e padrão GBFS;</li>
+												<li>JavaScript e Node.js;</li>
+												<li>Git e GitHub.</li>
+											</ul>
+											<ul class="actions">
+												<li><a href="https://github.com/Luan-ghub/rebalanceamento-bike-itau-n8n" class="button primary" target="_blank" rel="noopener noreferrer">Saiba mais</a></li>
+												<li><a href="https://github.com/Luan-ghub/rebalanceamento-bike-itau-n8n/blob/main/workflows/bike_itau_rebalanceamento.json" class="button" target="_blank" rel="noopener noreferrer">Workflow</a></li>
+											</ul>
+										</article>
+
+										<article>
+											<a href="https://github.com/Luan-ghub/tcc-previsao-de-carga" class="image project-image" target="_blank" rel="noopener noreferrer">
+												<img src="images/tcc-previsao-carga.png" alt="TCC - Previsão de Carga de Curto Prazo" />
+											</a>
+											<h3>TCC - Previsão de Carga de Curto Prazo</h3>
+											<p>Trabalho de Conclusão de Curso que compara Naive sazonal, ARIMA e XGBoost na previsão horária do consumo elétrico de duas indústrias baianas, nos horizontes de 1, 6, 12 e 24 horas.</p>
+											<p>Além das métricas estatísticas, os desvios foram convertidos em estimativas financeiras com o PLD horário, conectando o desempenho preditivo às decisões de contratação no mercado livre de energia.</p>
+											<h4>Ferramentas Utilizadas</h4>
+											<ul>
+												<li>Python, Pandas e NumPy;</li>
+												<li>XGBoost, ARIMA e scikit-learn;</li>
+												<li>Jupyter Notebook;</li>
+												<li>Git e GitHub.</li>
+											</ul>
+											<ul class="actions">
+												<li><a href="https://github.com/Luan-ghub/tcc-previsao-de-carga" class="button primary" target="_blank" rel="noopener noreferrer">Saiba mais</a></li>
+												<li><a href="https://github.com/Luan-ghub/tcc-previsao-de-carga/blob/main/tcc/TCC%20-%20Luan%20Moura.pdf" class="button" target="_blank" rel="noopener noreferrer">TCC completo</a></li>
+											</ul>
+										</article>
+
+										<article>
+											<a href="https://github.com/Luan-ghub/pipeline-criticidade-faturamento" class="image project-image" target="_blank" rel="noopener noreferrer">
+												<img src="images/pipeline-criticidade.png" alt="Pipeline de Criticidade no Faturamento de Energia" />
+											</a>
+											<h3>Pipeline de Criticidade no Faturamento de Energia</h3>
+											<p>Pipeline para automatizar a extração, o tratamento e o acompanhamento de indicadores de refaturamento, faturas sem leitura e cobertura de leitura disponibilizados pela ANEEL.</p>
+											<p>O processo compara cada município com seu histórico recente, organiza uma fila de investigação por criticidade e entrega os resultados em relatório HTML e painel interativo no Streamlit.</p>
+											<h4>Ferramentas Utilizadas</h4>
+											<ul>
+												<li>Python e Pandas;</li>
+												<li>SQL e SQLite;</li>
+												<li>Streamlit e HTML;</li>
+												<li>API de dados abertos da ANEEL.</li>
+											</ul>
+											<ul class="actions">
+												<li><a href="https://github.com/Luan-ghub/pipeline-criticidade-faturamento" class="button primary" target="_blank" rel="noopener noreferrer">Saiba mais</a></li>
+											</ul>
+										</article>
+
+										<article>
+											<a href="https://github.com/Luan-ghub/night-dimmer-extension" class="image project-image contain-cover" target="_blank" rel="noopener noreferrer">
+												<img src="images/night-dimmer.png" alt="NightDimmer - Extensão Navegador" />
+											</a>
+											<h3>NightDimmer - Extensão Navegador</h3>
+											<p>Extensão Chromium Manifest V3 para controlar o brilho das páginas, aplicar filtro de conforto visual e adaptar superfícies claras com um modo escuro inteligente.</p>
+											<p>As configurações podem ser aplicadas em uma aba, em abas selecionadas ou em todas as abas e são armazenadas localmente, sem coleta ou envio de dados de navegação.</p>
+											<h4>Ferramentas Utilizadas</h4>
+											<ul>
+												<li>JavaScript;</li>
+												<li>HTML e CSS;</li>
+												<li>Chromium Extension APIs e Manifest V3;</li>
+												<li>Git e GitHub.</li>
+											</ul>
+											<ul class="actions">
+												<li><a href="https://github.com/Luan-ghub/night-dimmer-extension" class="button primary" target="_blank" rel="noopener noreferrer">Saiba mais</a></li>
+												<li><a href="https://github.com/Luan-ghub/night-dimmer-extension#como-instalar" class="button" target="_blank" rel="noopener noreferrer">Instalação</a></li>
+											</ul>
+										</article>
+
+										<article>
 											<a href="https://github.com/Luan-ghub/enem-2025-data-quality-pipeline" class="image project-image" target="_blank" rel="noopener noreferrer">
 												<img src="images/enem.png" alt="Projeto de pipeline dos Microdados do ENEM 2025" />
 											</a>
@@ -289,14 +396,14 @@
     </header>
 		<div class="mini-posts">
 			<article>
-				<a href="https://github.com/Luan-ghub/enem-2025-data-quality-pipeline" class="image recent-project-image" target="_blank" rel="noopener noreferrer"><img src="images/enem.png" alt="Pipeline de Qualidade dos Microdados do ENEM 2025" /></a>
-				<h3>Pipeline de Qualidade dos Microdados do ENEM 2025</h3>
-				<p>Inspeção, limpeza, padronização e validação dos microdados públicos disponibilizados pelo Inep.</p>
+				<a href="https://github.com/Luan-ghub/hm-customer-product-analytics" class="image recent-project-image contain-cover" target="_blank" rel="noopener noreferrer"><img src="images/hm-analytics.png" alt="H&amp;M Analytics - Dashboard" /></a>
+				<h3>H&amp;M Analytics - Dashboard</h3>
+				<p>Análise de recorrência, clientes, produtos e canais com entrega de dashboard no Power BI.</p>
 			</article>
 			<article>
-				<a href="https://github.com/Luan-ghub/curry_company" class="image recent-project-image" target="_blank" rel="noopener noreferrer"><img src="images/food.png" alt="Dashboard Interativo Curry Company" /></a>
-				<h3>Dashboard Interativo Curry Company</h3>
-				<p>Painel gerencial para análise de indicadores logísticos e de desempenho de uma empresa de food delivery.</p>
+				<a href="https://github.com/Luan-ghub/rebalanceamento-bike-itau-n8n" class="image recent-project-image" target="_blank" rel="noopener noreferrer"><img src="images/bikes-itau.png" alt="Automação de Balanceamento Bikes Itaú" /></a>
+				<h3>Automação de Balanceamento Bikes Itaú</h3>
+				<p>Automação low-code para identificar estações críticas e sugerir movimentações de bicicletas.</p>
 			</article>
 		</div>
     <ul class="actions">
